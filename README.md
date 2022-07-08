@@ -19,10 +19,11 @@ The CHSH inequality can be formulated as a game. It is played with two players, 
 3. The players win if $x\wedge y = a \oplus b$.
 
 Before trying to employee quantum computing, lets just try to think of a regular strategy that would work to win. We can construct a truth table to observe which conditions Alice and Bob can employ to win. On the left are the values of $x$ and $y$ and on the right is what $a\oplus b$ needs to be to win.
-
-| $x$ | $y$ | $a \oplus b$ |
-|:---:|:---:|:------------:|
-|  0  |  0  |      0       |
-|  0  |  1  |      0       |
-|  1  |  0  |      0       |
-|  1  |  1  |      1       |
+<center>
+    | $x$ | $y$ | $a \oplus b$ |
+    |:---:|:---:|:------------:|
+    |  0  |  0  |      0       |
+    |  0  |  1  |      0       |
+    |  1  |  0  |      0       |
+    |  1  |  1  |      1       |
+</center>
