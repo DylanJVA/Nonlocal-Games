@@ -46,7 +46,7 @@ Now, we just need to flip the second qubit in the second ket without flipping it
 
 $$CNOT\left(\frac{1}{\sqrt{2}}(\ket{00}+\ket{10})\right) = \frac{1}{\sqrt{2}}(\ket{00}+\ket{11})$$
 
-The next step of the strategy is to define a new basis as a function of some angle 
+The next step of the strategy is to define a new basis as a function of the angle $\theta$
 
 $$\phi_0(\theta)=\cos\theta\ket{0}+\sin\theta\ket{1}$$
 
@@ -71,9 +71,9 @@ $$R_y(2\theta)\ket{\psi_i} = \begin{bmatrix}
 
 as we wanted.
 
-Now the game is played. If Alice receives $\ x=1 \ $, she  will measure her qubit in the basis corresponding to $\theta=\frac{\pi}{4}$, and in the standard basis otherwise. 
+Now the game is played. If Alice receives $x=1$, she  will measure her qubit in the basis corresponding to $\theta=\frac{\pi}{4}$, and in the standard basis otherwise. 
 
-If Bob receives $ \ y=0 \ $, he will measure his qubit in the basis corresponding to $\theta=\frac{\pi}{8}$, and in the basis corresponding to $\theta=-\frac{\pi}{8}$ otherwise.
+If Bob receives $y=0$, he will measure his qubit in the basis corresponding to $\theta=\frac{\pi}{8}$, and in the basis corresponding to $\theta=-\frac{\pi}{8}$ otherwise.
 
 
 
