@@ -68,7 +68,7 @@ $$R_y(2\theta)\ket{\psi_i} = \begin{bmatrix}
 
 as we wanted.
 
-Now the game is played. If Alice receives $x=1$, she  will measure her qubit in the basis corresponding to $\theta=\frac{\pi}{4}$, and in the standard basis otherwise. 
+Now the game is played. If Alice receives $ x=1 $, she  will measure her qubit in the basis corresponding to $\theta=\frac{\pi}{4}$, and in the standard basis otherwise. 
 
 If Bob receives $y=0$, he will measure his qubit in the basis corresponding to $\theta=\frac{\pi}{8}$, and in the basis corresponding to $\theta=-\frac{\pi}{8}$ otherwise.
 
