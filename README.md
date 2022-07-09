@@ -41,10 +41,10 @@ $\phi_1(\theta)=-\sin\theta\ket{0}+\cos\theta\ket{1}$
 
 This may look similar to an operation you've seen before. Remember that the $R_y$ gate is:
 
-$R_y(\theta) = \begin{bmatrix}
+$R_y(\theta) = \begin{pmatrix}
  \cos\frac{\theta}{2} & \sin\frac{\theta}{2} \\
  -\sin\frac{\theta}{2} & \cos\frac{\theta}{2} \\
- \end{bmatrix}$
+ \end{pmatrix}$
 
 Transorming to any basis $\{\phi_0(\theta),\phi_1(\theta)\}$ is simply a matter of applying the y rotation matrix with twice the angle applied to the old basis. Rotating a qubit $\ket{\psi_i}$ in state $a\ket{0}+b\ket{1}$ into the new basis is now:
 
