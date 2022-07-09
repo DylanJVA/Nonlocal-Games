@@ -27,33 +27,12 @@ Before trying to employee quantum computing, lets just try to think of a regular
 |  1  |  0  |      0       |
 |  1  |  1  |      1       |
 
-Think a moment, is there *any* $a$ and $b$ the players can always answer to win? A good one would be to have both players always respond with $1$, because $a\oplus b$ is always $0$ and thus they win $75$% of the time. In fact, this is an optimal strategy if Alice and Bob cannot violate locality, according to Bell's theorem. If we can devise a quantum strategy that wins more often, we have shown experimentally that local theories fail.
+Think for a moment, is there *any* $a$ and $b$ the players can always answer to win? A good one would be to have both players always respond with $1$, because $a\oplus b$ is always $0$ and thus they win $75$% of the time. In fact, this is an optimal strategy if Alice and Bob cannot violate locality, according to Bell's theorem. If we can devise a quantum strategy that wins more often, we have shown experimentally that local theories fail.
 
-I will skip mostly why the strategy works and how it was constructed. The winning condition was designed to be strategized against with entanglement.
+I will skip mostly why the strategy works and how it was constructed. The winning condition was designed to be strategized for use with entanglement.
 
-Instead of using bits, Alice and Bob will now use qubits, and will be answering the referees questions with measurement results. 
+Instead of using bits, Alice and Bob will now use qubits, and will be answering the referee's questions with measurement results. 
 
-The first step of the strategy is to define a new basis as a function of some angle 
-
-$$\phi_0(\theta)=\cos\theta\ket{0}+\sin\theta\ket{1}$$
-
-$$\phi_1(\theta)=-\sin\theta\ket{0}+\cos\theta\ket{1}$$
-
-This may look similar to an operation you've seen before. Remember that the $R_y$ gate is:
-
-$$R_y(\theta) = \begin{bmatrix}
- \cos\frac{\theta}{2} & \sin\frac{\theta}{2} \\
- -\sin\frac{\theta}{2} & \cos\frac{\theta}{2} \\
- \end{bmatrix}$$
-
-Transorming to any basis {$\phi_0(\theta),\phi_1(\theta)$} is simply a matter of applying the y rotation matrix with twice the angle applied to the old basis. Rotating a qubit $\ket{\psi_i}$ in state $a\ket{0}+b\ket{1}$ into the new basis is now:
-
-$$R_y(2\theta)\ket{\psi_i} = \begin{bmatrix}
- \cos\theta & \sin\theta \\
- -\sin\theta & \cos\theta \\
- \end{bmatrix}\begin{bmatrix}a\\ b\end{bmatrix}$$
-
-as we wanted.
 
 The strategy begins by creating the following entangled state:
 
@@ -67,6 +46,27 @@ Now, we just need to flip the second qubit in the second ket without flipping it
 
 $$CNOT\left(\frac{1}{\sqrt{2}}(\ket{00}+\ket{10})\right) = \frac{1}{\sqrt{2}}(\ket{00}+\ket{11})$$
 
+The next step of the strategy is to define a new basis as a function of some angle 
+
+$$\phi_0(\theta)=\cos\theta\ket{0}+\sin\theta\ket{1}$$
+
+$$\phi_1(\theta)=-\sin\theta\ket{0}+\cos\theta\ket{1}$$
+
+This may look similar to an operation you've seen before. Remember that the $R_y$ gate is:
+
+$$R_y(\theta) = \begin{bmatrix}
+ \cos\frac{\theta}{2} & \sin\frac{\theta}{2} \\
+ -\sin\frac{\theta}{2} & \cos\frac{\theta}{2} \\
+ \end{bmatrix}$$
+
+Transorming to any basis {$\phi_0(\theta),\phi_1(\theta)$} is simply a matter of applying the $R_y$ gate with twice the angle to the old basis. Rotating a qubit $\ket{\psi_i}$ in state $a\ket{0}+b\ket{1}$ into this new basis is now:
+
+$$R_y(2\theta)\ket{\psi_i} = \begin{bmatrix}
+ \cos\theta & \sin\theta \\
+ -\sin\theta & \cos\theta \\
+ \end{bmatrix}\begin{bmatrix}a\\ b\end{bmatrix}$$
+
+as we wanted.
 
 Now the game is played. If Alice receives $x=1$, she  will measure her qubit in the basis corresponding to $\theta=\frac{\pi}{4}$, and in the standard basis otherwise. 
 
