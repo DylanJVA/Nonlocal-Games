@@ -59,10 +59,7 @@ $$R_y(\theta) = \begin{bmatrix}
  -\sin\frac{\theta}{2} & \cos\frac{\theta}{2} \\
  \end{bmatrix}$$
 
-Transorming to any basis 
-$$\{\phi_0(\theta),\phi_1(\theta)\}$$
-
- is simply a matter of applying the $R_y$ gate with twice the angle to the old basis. Rotating a qubit $\ket{\psi_i}$ in state $a\ket{0}+b\ket{1}$ into this new basis is now:
+Transorming to any basis $\{\phi_0(\theta),\phi_1(\theta)\}$ is simply a matter of applying the $R_y$ gate with twice the angle to the old basis. Rotating a qubit $\ket{\psi_i}$ in state $a\ket{0}+b\ket{1}$ into this new basis is now:
 
 $$R_y(2\theta)\ket{\psi_i} = \begin{bmatrix}
  \cos\theta & \sin\theta \\
