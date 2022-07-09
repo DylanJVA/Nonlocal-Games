@@ -64,7 +64,7 @@ Transorming to any basis {$\phi_0(\theta),\phi_1(\theta)$} is simply a matter of
 $$R_y(2\theta)\ket{\psi_i} = \begin{bmatrix}
  \cos\theta & \sin\theta \\
  -\sin\theta & \cos\theta \\
- \end{bmatrix}\begin{bmatrix}a\\ b\end{bmatrix}$$
+ \end{bmatrix} \begin{bmatrix} a\\ b\end{bmatrix}$$
 
 as we wanted.
 
