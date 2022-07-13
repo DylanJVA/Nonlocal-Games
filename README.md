@@ -132,11 +132,13 @@ This game was designed to show that while it is impossible for a true winning cl
 You can see why it wins each time by looking at the cases:
 
 - Case 1: $xyz=000$. None of the question bits are $1$, so all players will measure their qubits in the initial state. Looking at all the possible measurement outcomes to check the evaluation of $a\oplus b\oplus c$: 
-  
-    - $0\oplus 0\oplus 0=0$
-    - $0\oplus 1\oplus 1=0$
-    - $1\oplus 0\oplus 1=0$
-    - $1\oplus 1\oplus 0=0$
+
+    | $\ket{abc}$ | $a \oplus b \oplus c$ |
+    |:-----------:|:---------------------:|
+    |     000     |           0           |
+    |     011     |           0           |
+    |     101     |           0           |
+    |     110     |           0           |
 
     Because in every outcome the result is $0$, and because for $xyz=000$, $x\vee y\vee z=0$, they win in this case every time.
 
@@ -144,7 +146,6 @@ You can see why it wins each time by looking at the cases:
   
     $$ (I\otimes H\otimes H)\ket{\psi}=\frac{1}{2}(\ket{001}+\ket{010}-\ket{100}+\ket{111}) $$
 
-    Remember, we applied the Hadamard gates to only one qubit each, so we needed to include the $I\ \otimes$.
     Lets look again at the possible values of $a\oplus b\oplus c$:
 
     - $0\oplus 0\oplus 1=1$
@@ -152,4 +153,11 @@ You can see why it wins each time by looking at the cases:
     - $1\oplus 0\oplus 0=1$
     - $1\oplus 1\oplus 1=1$
 
-    It is obvious for this case that $x\vee y\vee z = 1$ in every scenario, so the players will win in this case every time as well. 
+    | $\ket{abc}$ | $a \oplus b \oplus c$ |
+    |:-----------:|:---------------------:|
+    |     001     |           1           |
+    |     010     |           1           |
+    |     100     |           1           |
+    |     111     |           1           |
+
+    It is obvious for this case that $x\vee y\vee z = 1$ in every scenario, and $a \oplus b \oplus c = 1$ with any measurement, so the players will win in this case every time as well. 
