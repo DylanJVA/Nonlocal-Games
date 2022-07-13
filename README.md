@@ -148,11 +148,6 @@ You can see why it wins each time by looking at the cases:
 
     Lets look again at the possible values of $a\oplus b\oplus c$:
 
-    - $0\oplus 0\oplus 1=1$
-    - $0\oplus 1\oplus 0=1$
-    - $1\oplus 0\oplus 0=1$
-    - $1\oplus 1\oplus 1=1$
-
     | $\ket{abc}$ | $a \oplus b \oplus c$ |
     |:-----------:|:---------------------:|
     |     001     |           1           |
