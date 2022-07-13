@@ -81,7 +81,7 @@ As it turns out, this strategy will win $85$% of the time, which clearly beats o
 
 ### The GHZ Game
 
-The GHZ game is similar to the CHSH game except there is one more player. This time, the question bits $rst$ posed by the referee are not completely random;
+The GHZ game is similar to the CHSH game except there is one more player. This time, the question bits $xyz$ posed by the referee are not completely random;
 
 1. The referee chooses them uniformly from the set $xyz\in\{000,011,101,110\}$. 
 2. The winning condition for this game is if $x\vee y\vee z = a \oplus b \oplus c$.
