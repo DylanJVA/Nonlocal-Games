@@ -52,12 +52,12 @@ namespace NonlocalGames {
             Console.WriteLine("Win %: " + (double)wins/(double)numGames);
         }
 
-        static bool CHSHWinCondition(int r, int s, int a, int b) {
-            return (r & s) == (a ^ b);
+        static bool CHSHWinCondition(int x, int y, int a, int b) {
+            return (x & y) == (a ^ b);
         }
 
-        static bool GHZWinCondition(int r, int s, int t, int a, int b, int c) {
-            return (r | s | t) == (a ^ b ^ c);
+        static bool GHZWinCondition(int x, int y, int z, int a, int b, int c) {
+            return (x | y | z) == (a ^ b ^ c);
         }
     }
 }
