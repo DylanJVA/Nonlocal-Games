@@ -18,7 +18,7 @@ The CHSH inequality, a test of Bell's theorem, can be formulated as a game. It i
 
 1. The referee poses a random question bit, $x\in\{0,1\}$ to Alice and $y\in\{0,1\}$ to Bob.
 2. The players must each respond with their own bit, $a$ for Alice and $b$ for Bob, without classical communication with the other.
-3. The players win if $x\wedge y = a \oplus b$. [(What do $\wedge$ (AND) and $\oplus$ (XOR) mean again?)](../classical-computing/digital-logic.md#binary-gates)
+3. The players win if $x\wedge y = a \oplus b$. 
 
 Before trying to employ quantum computing, lets just try to think of a regular strategy for this game. We can construct a truth table to observe which conditions Alice and Bob need to work towards to win. On the left is the possible question combination and on the right is what $a\oplus b$ needs to be for Alice and Bob to win. 
 
@@ -61,7 +61,7 @@ $$R_y(\theta) = \begin{bmatrix}
  -\sin\frac{\theta}{2} & \cos\frac{\theta}{2} \\
  \end{bmatrix}$$
 
-Transorming to any basis $\{\phi_0(\theta),\phi_1(\theta)\}$ is simply a matter of applying the $R_y$ gate with twice the angle to the old basis. Rotating a qubit $\ket{\psi_i}$ in state $a\ket{0}+b\ket{1}$ into this new basis is now:
+Transorming to any basis {$\phi_0(\theta),\phi_1(\theta)$} is simply a matter of applying the $R_y$ gate with twice the angle to the old basis. Rotating a qubit $\ket{\psi_i}$ in state $a\ket{0}+b\ket{1}$ into this new basis is now:
 
 $$R_y(2\theta)\ket{\psi_i} = \begin{bmatrix}
  \cos\theta & \sin\theta \\
