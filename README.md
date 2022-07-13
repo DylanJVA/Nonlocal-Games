@@ -24,10 +24,10 @@ Before trying to employ quantum computing, lets just try to think of a regular s
 
 | $x$ | $y$ | $a \oplus b$ |
 |:---:|:---:|:------------:|
-|  0  |  0  |      0       |
-|  0  |  1  |      0       |
-|  1  |  0  |      0       |
-|  1  |  1  |      1       |
+| $0$ | $0$ |     $0$      |
+| $0$ | $1$ |     $0$      |
+| $1$ | $0$ |     $0$      |
+| $1$ | $1$ |     $1$      |
 
 Think for a moment, is there *any* $a$ and $b$ the players can always answer to win? A good one would be to have both players always respond with $1$, because $a\oplus b$ is always $0$ and thus they win $75$% of the time. In fact, this is an optimal strategy if Alice and Bob cannot violate locality, according to the bound set by Bell's theorem. If we can devise a quantum strategy that wins more often, we have shown experimentally that local theories fail.
 
@@ -90,10 +90,10 @@ We can construct another table to show us which value $a\oplus b\oplus c$ needs 
 
 | $xyz$ | $a \oplus b$ |
 |:-----:|:------------:|
-|  000  |      0       |
-|  011  |      1       |
-|  101  |      1       |
-|  110  |      1       |
+| $000$ |     $0$      |
+| $011$ |     $1$      |
+| $101$ |     $1$      |
+| $110$ |     $1$      |
 
 Again the best possible classical strategy will win $75$% of the time (can you come up with it?). We will turn to entangled qubits to see if we can do better.
 
@@ -135,10 +135,10 @@ You can see why it wins each time by looking at the cases:
 
     | $\ket{abc}$ | $a \oplus b \oplus c$ |
     |:-----------:|:---------------------:|
-    |     000     |           0           |
-    |     011     |           0           |
-    |     101     |           0           |
-    |     110     |           0           |
+    |    $000$    |          $0$          |
+    |    $011$    |          $0$          |
+    |    $101$    |          $0$          |
+    |    $110$    |          $0$          |
 
     Because in every outcome the result is $0$, and because for $xyz=000$, $x\vee y\vee z=0$, they win in this case every time.
 
@@ -150,9 +150,9 @@ You can see why it wins each time by looking at the cases:
 
     | $\ket{abc}$ | $a \oplus b \oplus c$ |
     |:-----------:|:---------------------:|
-    |     001     |           1           |
-    |     010     |           1           |
-    |     100     |           1           |
-    |     111     |           1           |
+    |    $001$    |          $1$          |
+    |    $010$    |          $1$          |
+    |    $100$    |          $1$          |
+    |    $111$    |          $1$          |
 
     It is obvious for this case that $x\vee y\vee z = 1$ in every scenario, and $a \oplus b \oplus c = 1$ with any measurement, so the players will win in this case every time as well. 
